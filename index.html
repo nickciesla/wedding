@@ -50,17 +50,20 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- Add Calendar Event-->
+	<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<!--<div class="fh5co-loader"></div>-->
 	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="index.html"><strong>e&amp;n</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
@@ -99,10 +102,33 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Erin &amp; Nick</h1>
-							<h2>We Are Getting Married</h2>
+							<h1><strong>erin &amp; nick</strong></h1>
+							<h2 class="subheader">It's been a long time coming.</h2>
+							<h2 class="headerdate">05.31.25</h2>
 							<!--<div class="simply-countdown simply-countdown-one"></div>-->
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<button id="save-date-button" class="btn btn-default btn-sm">Save the date</button>
+							<script type="application/javascript">
+							const config = {
+								name: "Erin & Nick Wedding",
+								startDate: "2025-05-31",
+								startTime: "17:00",
+								endDate: "2025-05-31",
+								endTime: "23:00",
+								timeZone: "America/New_York",
+								location: "Icona Windrift, Avalon, NJ 08202",
+								options: ['Apple','Google','Outlook.com','Yahoo'],
+								trigger: "click",
+								hideIconButton: true,
+								hideBackground: true,
+								hideCheckmark: true,
+								label: "Save the Date",
+								listStyle: "dropdown"
+							};
+							const button = document.getElementById('save-date-button');
+							if (button) {
+								button.addEventListener('click', () => atcb_action(config, button));
+							}
+							</script>
 						</div>
 					</div>
 				</div>
@@ -116,7 +142,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<h3>May 31st, 2025 Avalon, NJ</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<p>We invite you to celebrate our wedding</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -125,7 +151,7 @@
 						<img src="images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Joefrey Mahusay</h3>
+						<h3>Erin Leigh Ally</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
 					</div>
 				</div>
@@ -135,7 +161,28 @@
 						<img src="images/bride.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Sheila Mahusay</h3>
+						<h3>Nicholas James Ciesla</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+					</div>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Erin Ally</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Nick Ciesla</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
 					</div>
 				</div>
@@ -159,15 +206,8 @@
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
 									<h3>Main Ceremony</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>4:00 PM</span>
-										<span>6:00 PM</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
+									<div>
+										<span>4:00 PM &dash; 6:00 PM</span>
 									</div>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 								</div>
@@ -548,17 +588,16 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2023 Erin &hearts; Nick</small> 
 					</p>
-					<p>
+					<!--<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
-					</p>
+					</p>-->
 				</div>
 			</div>
 
