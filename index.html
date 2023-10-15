@@ -10,6 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Erin & Nick Wedding" />
 	<meta name="keywords" content="erin, nick, wedding, ally, ciesla, icona, windrift, avalon" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>body { margin: 0px; } .embed-container { position: relative; padding-bottom: 50%; height: 0; overflow: hidden; max-width: 100%; min-height: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+	
 	<meta name="author" content="erin&nick" />
 
   	<!-- Facebook and Twitter integration -->
@@ -53,6 +57,19 @@
 	<!-- Add Calendar Event-->
 	<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 
+	<script type="text/javascript">
+		function iframeLoaded() {
+			console.log('hi')
+			var iFrameID = document.getElementById('rsvp-iframe');
+			console.log(iFrameID)
+			if(iFrameID) {
+				  console.log(iFrameID.contentWindow.document.body.scrollHeight + "px")
+				  iFrameID.height = "";
+				  iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+			}   
+		}
+	</script> 
+
 	</head>
 	<body>
 		
@@ -68,26 +85,12 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="story.html">Story</a></li>
+						<li><a href="weddingparty.html">Wedding Party</a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="details.html">Details</a></li>
+						<li><a href="registry.html">Registry</a></li>
+						<li><a href="rsvp.html">RSVP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -135,6 +138,8 @@
 			</div>
 		</div>
 	</header>
+
+	<iframe id="rsvp-iframe" onload="iframeLoaded()" src='https://rsvp.cieslawedding.com' style='border:0; width:100%;'></iframe>
 
 	<div id="fh5co-couple">
 		<div class="container">
