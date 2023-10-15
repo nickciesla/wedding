@@ -33,8 +33,9 @@ function init() {
     var addresses = ['Brooklyn'];
 
     for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA4xWC5GZU5PNoWX57Z3--8hpnZMoPgkiw?address=Icona+Windrift&sensor=false', null, function (data) {
             var p = data.results[0].geometry.location
+            console.log()
             var latlng = new google.maps.LatLng(p.lat, p.lng);
             new google.maps.Marker({
                 position: latlng,
@@ -47,3 +48,19 @@ function init() {
     
 }
 google.maps.event.addDomListener(window, 'load', init);
+
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <gmp-map center="39.06346893310547,-74.74812316894531" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="39.06346893310547,-74.74812316894531" title="My location">
+      </gmp-advanced-marker>
+    </gmp-map>
+  </body>
+</html>
