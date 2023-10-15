@@ -31,6 +31,15 @@ body {
   background: #fff;
 }
 
+#save-date-button {
+  font-family: "seasons";
+  color: rgba(26, 85, 120, 1);
+}
+
+#save-date-button:hover {
+  background-color: rgba(169, 181, 190, 1);
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -112,6 +121,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   padding: 40px 0;
   z-index: 1001;
+  font-family: "seasons";
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -147,7 +157,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   font-size: 14px;
   padding: 30px 10px;
-  text-transform: uppercase;
+  
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -319,6 +329,8 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
 }
@@ -386,14 +398,29 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
 }
+#fh5co-counter .fh5co-heading h1,
+#fh5co-event .fh5co-heading h1 {
+  color: rgba(26, 85, 120, 1);
+  font-family: "seasons"
+}
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #fff;
+  color: rgba(26, 85, 120, 1);
+}
+#fh5co-counter .fh5co-heading h3,
+#fh5co-event .fh5co-heading h3 {
+  color: rgba(169, 181, 190, 1);
+  font-family: "holiday";
+}
+#fh5co-counter .fh5co-heading p,
+#fh5co-event .fh5co-heading p {
+  color: rgba(169, 181, 190, 1);
+  font-family: "seasons";
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
+  color: rgba(26, 85, 120, 1);
+  
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -422,7 +449,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(26, 85, 120, 1);
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   width: 100%;
@@ -441,22 +468,21 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(26, 85, 120, 1);
+  border-bottom: 1px solid rgba(26, 85, 120, 1);
   display: block;
   padding-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(169, 181, 190, 1);
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
-  color: white;
+  color: rgba(169, 181, 190, 1);
   font-size: 20px;
 }
 #fh5co-counter .event-wrap .event-col,
@@ -603,7 +629,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   margin-bottom: 20px;
   font-size: 13px;
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
 }
 
@@ -731,7 +757,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-gallery-list li a .case-studies-summary span {
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
@@ -864,7 +890,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "seasons";
+  font-family: "holiday";
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -902,7 +928,7 @@ form label {
   color: rgba(26, 85, 120, 1);
   border: none !important;
   font-size: 14px;
-  text-transform: uppercase;
+  
 }
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
@@ -925,7 +951,7 @@ form label {
 }
 #fh5co-counter .counter-label {
   margin-bottom: 0;
-  text-transform: uppercase;
+  
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: .1em;
 }
@@ -1005,7 +1031,7 @@ form label {
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
+  
   font-size: 12px;
   /* words */
 }
@@ -1185,7 +1211,7 @@ form label {
   margin-bottom: 30px;
 }
 .feature-center h3 {
-  text-transform: uppercase;
+  
   font-size: 18px;
   color: #5d5d5d;
 }
@@ -1215,7 +1241,7 @@ form label {
   color: #828282;
 }
 .fh5co-heading span {
-  text-transform: uppercase;
+  
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -1230,7 +1256,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span {
   font-size: 12px;
-  text-transform: uppercase;
+  
   letter-spacing: 2px;
   font-weight: 700;
   display: block;
@@ -1341,7 +1367,7 @@ form label {
   }
 }
 .feature-left .feature-copy h3 {
-  text-transform: uppercase;
+  
   font-size: 18px;
   color: #5d5d5d;
   margin-bottom: 10px;
@@ -1392,12 +1418,11 @@ form label {
   background: rgba(255, 255, 255, 0.3);
 }
 #fh5co-started .btn {
-  height: 54px;
   border: none !important;
   background: rgba(26, 85, 120, 1);
   color: #fff;
   font-size: 16px;
-  text-transform: uppercase;
+  
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
@@ -1524,7 +1549,7 @@ form label {
   color: #000;
   margin-bottom: 10px;
   font-weight: 700;
-  text-transform: uppercase;
+  
 }
 
 .gototop {
@@ -1584,7 +1609,7 @@ form label {
   height: 2px;
   color: #252525;
   font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
+  
   text-indent: -55px;
   background: #252525;
   transition: all .2s ease-out;
