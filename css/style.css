@@ -306,9 +306,9 @@ figure {
 
 .fh5co-cover {
   height: 900px;
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
   position: relative;
   width: 100%;
@@ -332,6 +332,11 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+  }
+
+  .fh5co-cover-flip {
+    background-image: url("../images/story_header_flip.jpeg") !important;
+    background-size: auto 100% !important;
   }
 }
 
@@ -431,7 +436,7 @@ figure {
   }
 
   #fh5co-event .event-wrap {
-    height: 40vh !important; 
+    height: 40vh !important;
   }
 
 }
@@ -1021,6 +1026,7 @@ form label {
 .couple-half {
   width: 50%;
   float: left;
+  padding-bottom: 2vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -1080,6 +1086,10 @@ form label {
 .couple-half .bride {
   float: left;
   margin-left: 5px;
+}
+
+.couple-half p {
+  margin-bottom: 0;
 }
 
 .couple-half .desc-groom {
@@ -1461,7 +1471,7 @@ form label {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: white;
   top: 0;
   right: 0;
   top: 0;
@@ -1487,11 +1497,11 @@ form label {
 }
 
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(26, 85, 120, 1);
 }
 
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(169, 181, 190, 1);
 }
 
 #fh5co-offcanvas ul {
