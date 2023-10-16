@@ -306,7 +306,7 @@ figure {
 
 .fh5co-cover {
   height: 900px;
-  background-size: auto 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
