@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +22,7 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
@@ -59,15 +61,15 @@
 			</div>
 		</header>
 		<div id="fh5co-couple">
-			<div class="container">
-				<div class="row">
+			<ul id="wedding-party" class="container animate-box text-nowrap">
+				<li class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-couple animate-box">
 						<h3>say hello to</h3>
 						<h2>our wedding party</h2>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
-					<div class="couple-half">
+				</li>
+				<li class="couple-wrap animate-box">
+					<div class="couple-half animate-box">
 						<div class="groom">
 							<img src="images/hannah.PNG" alt="groom" class="img-responsive">
 						</div>
@@ -87,15 +89,15 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/stef.PNG" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-							<h3>stef alias</h3>
-							<p><strong>bridesmaid</strong></p>
+							<h3>stef smith alias</h3>
+							<p><strong>matron of honor</strong></p>
 							<p>high school friend</p>
 						</div>
 					</div>
@@ -109,14 +111,14 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/amanda.PNG" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-							<h3>amanda devlin</h3>
+							<h3>amanda ambrosino devlin</h3>
 							<p><strong>bridesmaid</strong></p>
 							<p>college friend</p>
 						</div>
@@ -131,8 +133,8 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/nicole.PNG" alt="groom" class="img-responsive">
@@ -153,14 +155,14 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/katie.PNG" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-							<h3>katie johnson</h3>
+							<h3>katie burke johnson</h3>
 							<p><strong>bridesmaid</strong></p>
 							<p>high school friend</p>
 						</div>
@@ -175,14 +177,14 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/alyssa.png" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-							<h3>alyssa hummer</h3>
+							<h3>alyssa brousseau hummer</h3>
 							<p><strong>bridesmaid</strong></p>
 							<p>high school friend</p>
 						</div>
@@ -197,8 +199,8 @@
 							<p>fraternity brother</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/sam.PNG" alt="groom" class="img-responsive">
@@ -219,8 +221,8 @@
 							<p>high school friend</p>
 						</div>
 					</div>
-				</div>
-				<div class="couple-wrap animate-box">
+				</li>
+				<li class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
 							<img src="images/juli.PNG" alt="groom" class="img-responsive">
@@ -237,19 +239,19 @@
 						</div>
 						<div class="desc-bride">
 							<h3>mike ciesla</h3>
-							<p><strong>bridesmaid</strong></p>
+							<p><strong>groomsman</strong></p>
 							<p>cousin of the groom</p>
 						</div>
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
 
 				<div class="row copyright">
 					<div class="col-md-12 center-block">
-						<img src="images/enlogo.png" class="center-block" style="height: 15vh"></img>
+						<img src="images/enlogo.PNG" class="center-block" style="height: 15vh"></img>
 					</div>
 				</div>
 
@@ -269,5 +271,24 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		$(window).on('load', function () {
+			if ($(window).width() < 768) {
+				$('#wedding-party').removeClass('text-nowrap');
+			} else {
+				$('#wedding-party').addClass('text-nowrap');
+			}
+			
+		});
+		$(window).on('resize', function () {
+			if ($(window).width() < 768) {
+				$('#wedding-party').removeClass('text-nowrap');
+			} else {
+				$('#wedding-party').addClass('text-nowrap');
+			}
+		});
+	</script>
 </body>
+
 </html>

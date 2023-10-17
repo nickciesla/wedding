@@ -21,6 +21,10 @@ body {
   background: #fff;
 }
 
+#wedding-party {
+  list-style: none;
+}
+
 #fh5co-footer,
 #fh5co-couple-story,
 #fh5co-couple,
@@ -392,6 +396,12 @@ figure {
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-row-mobile {
+    padding-bottom: 0 !important;
   }
 }
 
