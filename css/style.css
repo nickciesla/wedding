@@ -23,7 +23,15 @@ body {
 
 #wedding-party {
   list-style: none;
+  white-space: nowrap
 }
+
+@media screen and (max-width: 768px) {
+  #wedding-party {
+    white-space: normal;
+  }
+}
+
 
 #fh5co-footer,
 #fh5co-couple-story,
