@@ -130,22 +130,6 @@ if (next_button) {
 	next_button.addEventListener('click', () => atcb_action(next_config, next_button));
 }
 
-window.onload = function () {
-	var line = document.getElementById('fh5co-header');
-	const page_height = window.outerHeight * .8
-	if (line) {
-		line.style.height = page_height + 'px';
-	}
-}
-
-window.onload = function () {
-	var line = document.getElementById('fh5co-header-home');
-	const page_height = window.outerHeight
-	if (line) {
-		line.style.height = page_height + 'px';
-	}
-}
-
 var mobileMenuOutsideClick = function () {
 
 	$(document).click(function (e) {
