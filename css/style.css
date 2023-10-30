@@ -21,6 +21,11 @@ body {
   background: #fff;
 }
 
+.rsvp-frame {
+  height: 100vh;
+  width: 100%;
+}
+
 #wedding-party {
   list-style: none;
   white-space: nowrap
@@ -346,7 +351,7 @@ figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 1000px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -362,14 +367,14 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 600px;
+    height: 700px;
     background-size: cover !important;
   }
 }
 
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 1000px;
   display: table;
   width: 100%;
 }
@@ -378,23 +383,23 @@ figure {
 
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
+    height: 700px;
   }
 }
 
 .fh5co-cover.fh5co-cover-sm {
-  height: 600px;
+  height: 700px;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm {
-    height: 400px;
+    height: 500px;
   }
 }
 
 .fh5co-cover.fh5co-cover-sm .display-t,
 .fh5co-cover.fh5co-cover-sm .display-tc {
-  height: 600px;
+  height: 700px;
   display: table;
   width: 100%;
 }
@@ -403,7 +408,7 @@ figure {
 
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -469,9 +474,19 @@ figure {
   }
 
   #fh5co-event .event-wrap {
-    height: 40vh !important;
+    height: 50vh !important;
   }
 
+}
+
+.vcenter {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: calc(2vh + 30px);
 }
 
 #fh5co-event .event-wrap {
@@ -479,7 +494,7 @@ figure {
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   float: left;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -831,6 +846,22 @@ figure {
 
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li.one-third {
+    width: 100%;
+  }
+}
+
+#fh5co-gallery-list li.one-half {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-gallery-list li.one-half {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #fh5co-gallery-list li.one-half {
     width: 100%;
   }
 }
@@ -1299,7 +1330,8 @@ form label {
 }
 
 .fh5co-contact-info li,
-.feature-copy p {
+.feature-copy p,
+.feature-copy li {
   color: rgba(169, 181, 190, 1);
 }
 

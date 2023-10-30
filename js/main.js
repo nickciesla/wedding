@@ -1,6 +1,6 @@
 //<!-- Welcome Party Calendar Event-->
 const welcome_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick Welcome Party",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -22,7 +22,7 @@ if (welcome_button) {
 
 //<!-- Ceremony Calendar Event-->
 const ceremony_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick Ceremony",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -44,7 +44,7 @@ if (ceremony_button) {
 
 //<!-- Cocktail Hour Calendar Event-->
 const cocktail_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick Cocktail Hour",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -66,7 +66,7 @@ if (cocktail_button) {
 
 //<!-- Reception Calendar Event-->
 const reception_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick Reception",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -88,7 +88,7 @@ if (reception_button) {
 
 //<!-- After Party Calendar Event-->
 const after_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick After Party",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -110,7 +110,7 @@ if (after_button) {
 
 //<!-- Next Day Party Calendar Event-->
 const next_config = {
-	name: "Erin & Nick Wedding",
+	name: "Erin & Nick Next Day Party",
 	startDate: "2025-05-31",
 	startTime: "17:00",
 	endDate: "2025-05-31",
@@ -242,32 +242,6 @@ var contentWayPoint = function () {
 	}, { offset: '85%' });
 };
 
-var goToTop = function () {
-
-	$('.js-gotop').on('click', function (event) {
-
-		event.preventDefault();
-
-		$('html, body').animate({
-			scrollTop: $('html').offset().top
-		}, 500, 'easeInOutExpo');
-
-		return false;
-	});
-
-	$(window).scroll(function () {
-
-		var $win = $(window);
-		if ($win.scrollTop() > 200) {
-			$('.js-top').addClass('active');
-		} else {
-			$('.js-top').removeClass('active');
-		}
-
-	});
-
-};
-
 var loaderPage = function () {
 	$(".fh5co-loader").fadeOut("slow");
 };
@@ -277,6 +251,5 @@ $(function () {
 	offcanvasMenu();
 	burgerMenu();
 	contentWayPoint();
-	goToTop();
 	loaderPage();
 });
