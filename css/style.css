@@ -21,6 +21,11 @@ body {
   background: #fff;
 }
 
+.registry-list {
+  width: 100%;
+  height: 100%;
+}
+
 .rsvp-frame {
   height: 100vh;
   width: 100%;
